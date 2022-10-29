@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar:hover{
+    width: 12px;
+    animation: 0.2 timing-function delay iteration-count direction fill-mode;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #808080;
+    border-radius: 50px;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/principal.jpg');
+}
+
+.containerPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+    position: relative;
+    top: 170px;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.name{
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.careers{
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.linkedin{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mouse{
+    width: 25px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    display: flex;
+}
+
+.mouse-wheel{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 1s linear infinite;
+}
+
+@keyframes move-wheel {
+    0%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+}
+
+.aboutMe{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.descriptionMe{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.description{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.HV{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.imgMe{
+    width: 50%;
+    height: 100%;
+    background-image: url('./img/Jhonier-Mosquera-\(15\).jpg');
+    background-size: cover;
+}
+
+
+.dev{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.imgDev{
+    width: 50%;
+    height: 100%;
+    background-image: url('./img/windowsRestaurant.jpg');
+    background-size: cover;
+}
+
+.whathDev{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.descriptionDev{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.github{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/footerIMG.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contactame{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.email{
+    border: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    color: #ffffff;
+    padding: 17px;
+    width: 450px;
+}
+
+.email::placeholder{
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.btnSubmit{
+    height: 52px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.linktree{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+@media  screen and (max-width: 700px) {
+
+    .containerPrincipal{
+        gap: 150px;
+    }
+
+    .welcome{
+        font-size: 20px;
+    }
+
+    .aboutMe{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    .descriptionMe{
+        width: 100%;
+        height: 100%;
+        gap: 100px;
+    }
+
+    .description{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .imgMe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .dev{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .imgDev{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .whathDev{
+        width: 100%;
+        height: 100%;
+        gap: 100px;
+    }
+
+    .descriptionDev{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .email{
+        width: 270px;
+    }
+
+
+
+}
